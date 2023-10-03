@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="552eb4a1-d6c5-4fd6-bd80-358578e6f119" name="Changes" comment="Teil des Rechtschreibtrainers implementiert (noch nicht getestet) json File implemntiert (noch nicht getestet)">
+    <list default="true" id="552eb4a1-d6c5-4fd6-bd80-358578e6f119" name="Changes" comment="Teil des Rechtschreibtrainers implementiert json File implemntiert und beides getestet">
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/Rechtschreibtrainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/Rechtschreibtrainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/WortPaar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/WortPaar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,13 +93,22 @@
       <option name="project" value="LOCAL" />
       <updated>1695835989795</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Teil des Rechtschreibtrainers implementiert json File implemntiert und beides getestet">
+      <option name="closed" value="true" />
+      <created>1696093989843</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696093989843</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Klasse WortPaar implementiert und getestet" />
     <MESSAGE value="Teil des Rechtschreibtrainers implementiert (noch nicht getestet) json File implemntiert (noch nicht getestet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Teil des Rechtschreibtrainers implementiert (noch nicht getestet) json File implemntiert (noch nicht getestet)" />
+    <MESSAGE value="Teil des Rechtschreibtrainers implementiert json File implemntiert und beides getestet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Teil des Rechtschreibtrainers implementiert json File implemntiert und beides getestet" />
   </component>
 </project>

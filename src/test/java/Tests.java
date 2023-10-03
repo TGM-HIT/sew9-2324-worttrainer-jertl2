@@ -1,6 +1,7 @@
 import at.ac.tgm.jertl2.WortPaar;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -52,6 +53,23 @@ public class Tests {
         Assertions.assertEquals(300, icon.getIconHeight());
     }
 
+    @Test
+    public void testLoadStats() throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        JsonNode jsonNode = objectMapper.readTree(new File("C:\\Users\\jakob\\IdeaProjects\\WortTrainerReloaded\\src\\main\\java\\at\\ac\\tgm\\jertl2\\data.json"));
+        JsonNode statistik = jsonNode.path("Statistik");
+        // Überprüfen, ob die Liste nicht leer ist
+        if (statistik.isArray() && !statistik.isEmpty()) {
+            // Wähle zufälligen Index
+            JsonNode statistikNode = jsonNode.path("Statistik");
+            ObjectNode statNode = (ObjectNode) jsonNode.path("Statistik");
+            statNode.put("richtig", 10);
+            statNode.put("falsch", 10);
+            objectMapper.writeValue(new File("C:\\Users\\jakob\\IdeaProjects\\WortTrainerReloaded\\src\\main\\java\\at\\ac\\tgm\\jertl2\\data.json"), jsonNode);
+            Assertions.assertEquals(10,statistikNode.get("richtig").asInt());
+            Assertions.assertEquals(10, statistikNode.get("falsch").asInt());
+        }
+    }
 
 }
 
