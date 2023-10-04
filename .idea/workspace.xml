@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="552eb4a1-d6c5-4fd6-bd80-358578e6f119" name="Changes" comment="Pattern implementiert, UML erneuert. Logik glecih geblieben">
+    <list default="true" id="552eb4a1-d6c5-4fd6-bd80-358578e6f119" name="Changes" comment="README hinzugefügt">
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/JSONSave.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/Rechtschreibtrainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/Rechtschreibtrainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/SaveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/SaveStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,13 +36,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -121,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696419278393</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="README hinzugefügt">
+      <option name="closed" value="true" />
+      <created>1696420877766</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696420877766</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -131,6 +146,7 @@
     <MESSAGE value="Teil des Rechtschreibtrainers implementiert json File implemntiert und beides getestet" />
     <MESSAGE value="Klasse Rechtschreibtrainer umstrukturiert um sie als Objekt nutzen zu können. Als nächstes wird das Pattern implementiert. Tests gleich da keine Logik Änderung" />
     <MESSAGE value="Pattern implementiert, UML erneuert. Logik glecih geblieben" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pattern implementiert, UML erneuert. Logik glecih geblieben" />
+    <MESSAGE value="README hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="README hinzugefügt" />
   </component>
 </project>

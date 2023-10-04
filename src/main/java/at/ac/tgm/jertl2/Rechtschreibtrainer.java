@@ -18,12 +18,14 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
  * @author jakob ertl
  * @version 03.10.2023
  */
-public class Rechtschreibtrainer implements SaveStrategy {
+public class Rechtschreibtrainer {
     private ArrayList<WortPaar> wortPaare;
     private int richtigW;
     private int falschW;
     private String currentWord;
     private String currentUrl;
+
+    private SaveStrategy saveStrategy;
 
     private ObjectMapper objectMapper = new ObjectMapper();
     private JsonNode jsonNode = objectMapper.readTree(new File("C:\\Users\\jakob\\IdeaProjects\\WortTrainerReloaded\\src\\main\\java\\at\\ac\\tgm\\jertl2\\data.json"));
@@ -33,6 +35,7 @@ public class Rechtschreibtrainer implements SaveStrategy {
 
     public Rechtschreibtrainer() throws IOException {
         wortPaare = new ArrayList<>();
+        saveStrategy = new JSONSave();
         richtigW = 0;
         falschW = 0;
         currentWord = null;
@@ -41,9 +44,9 @@ public class Rechtschreibtrainer implements SaveStrategy {
 
     private void loadWortpaareFromJson() throws IOException {
         JsonNode wortpaareNode = this.jsonNode.path("Wortpaare");
-        JsonNode statistikNode = this.jsonNode.path("Statistik");
-        richtigW = statistikNode.get("richtig").asInt();
-        falschW = statistikNode.get("falsch").asInt();
+        int[] values = saveStrategy.load(this.jsonNode);
+        richtigW = values[0];
+        falschW = values[1];
 
         for (int i = 0; i < wortpaareNode.size(); i++) {
             JsonNode randomWortpaarNode = wortpaareNode.get(i);
@@ -108,7 +111,7 @@ public class Rechtschreibtrainer implements SaveStrategy {
     }
 
     private void updateStatisticsInJson() throws IOException {
-        save(this.jsonNode);
+        saveStrategy.save(this.jsonNode, this.richtigW, this.falschW, this.objectMapper);
     }
 
     public void runTraining() throws IOException {
@@ -120,13 +123,5 @@ public class Rechtschreibtrainer implements SaveStrategy {
             displayOptionPane();
             updateStatisticsInJson();
         } while (!finished);
-    }
-
-    @Override
-    public void save(JsonNode node) throws IOException {
-        ObjectNode statNode = (ObjectNode) node.path("Statistik");
-        statNode.put("richtig", richtigW);
-        statNode.put("falsch", falschW);
-        objectMapper.writeValue(new File("C:\\Users\\jakob\\IdeaProjects\\WortTrainerReloaded\\src\\main\\java\\at\\ac\\tgm\\jertl2\\data.json"), node);
     }
 }
