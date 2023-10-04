@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="552eb4a1-d6c5-4fd6-bd80-358578e6f119" name="Changes" comment="README hinzugefügt">
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/JSONSave.java" afterDir="false" />
+    <list default="true" id="552eb4a1-d6c5-4fd6-bd80-358578e6f119" name="Changes" comment="Stategy Pattern implemntiert&#10; UML aktualisiert">
+      <change afterPath="$PROJECT_DIR$/src/doc/WorttrainerUMLV1.3.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/JSONSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/JSONSave.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/Rechtschreibtrainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/Rechtschreibtrainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/SaveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/SaveStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/tgm/jertl2/data.json" afterDir="false" />
@@ -136,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696420877766</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Stategy Pattern implemntiert&#10; UML aktualisiert">
+      <option name="closed" value="true" />
+      <created>1696422214218</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696422214218</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -147,6 +156,7 @@
     <MESSAGE value="Klasse Rechtschreibtrainer umstrukturiert um sie als Objekt nutzen zu können. Als nächstes wird das Pattern implementiert. Tests gleich da keine Logik Änderung" />
     <MESSAGE value="Pattern implementiert, UML erneuert. Logik glecih geblieben" />
     <MESSAGE value="README hinzugefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="README hinzugefügt" />
+    <MESSAGE value="Stategy Pattern implemntiert&#10; UML aktualisiert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stategy Pattern implemntiert&#10; UML aktualisiert" />
   </component>
 </project>
